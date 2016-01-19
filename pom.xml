@@ -37,6 +37,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <openMRSVersion>1.10.0</openMRSVersion>
         <webservices.restModuleVersion>2.6</webservices.restModuleVersion>
+        <fhirModuleVersion>1.0</fhirModuleVersion>
         <warFilename>openmrs</warFilename>
         <scriptFilename>add-modules.sh</scriptFilename>
         <modulesFolder>WEB-INF/bundledModules</modulesFolder>
@@ -53,6 +54,11 @@
             <groupId>org.openmrs.module</groupId>
             <artifactId>webservices.rest-omod</artifactId>
             <version>${webservices.restModuleVersion}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openmrs.module</groupId>
+            <artifactId>fhir-omod</artifactId>
+            <version>${fhirModuleVersion}</version>
         </dependency>
     </dependencies>
 
@@ -82,6 +88,11 @@
                                     <groupId>org.openmrs.module</groupId>
                                     <artifactId>webservices.rest-omod</artifactId>
                                     <destFileName>${modulesFolder}/webservices.rest-${webservices.restModuleVersion}.omod</destFileName>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>org.openmrs.module</groupId>
+                                    <artifactId>fhir-omod</artifactId>
+                                    <destFileName>${modulesFolder}/fhir-${fhirModuleVersion}.omod</destFileName>
                                 </artifactItem>
                             </artifactItems>
                         </configuration>
