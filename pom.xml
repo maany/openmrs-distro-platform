@@ -35,8 +35,8 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <openMRSVersion>1.10.0</openMRSVersion>
-        <webservices.restModuleVersion>2.6</webservices.restModuleVersion>
+        <openMRSVersion>2.0.0-alpha</openMRSVersion>
+        <webservices.restModuleVersion>2.13</webservices.restModuleVersion>
         <fhirModuleVersion>1.0</fhirModuleVersion>
         <warFilename>openmrs</warFilename>
         <scriptFilename>add-modules.sh</scriptFilename>
